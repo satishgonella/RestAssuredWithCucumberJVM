@@ -27,9 +27,7 @@ public class TopicsStepDefinitions {
 
 	@Given("a topic exists with an ID of (.*)")
 	public void a_topic_exists_with_ID(String ID){
-		request = given().param("ID" + ID);
-		System.out.println(ID);
-	}
+		request = given().param("ID" + ID);}
 
 	@When("a user retrieves the topic by (.*)")
 	public void a_user_retrieves_the_topic_by_ID(String ID){
